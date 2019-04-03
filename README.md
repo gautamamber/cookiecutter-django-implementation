@@ -32,6 +32,9 @@ cookiecutter https://github.com/gautamamber/cookiecutter-django-implementation.g
 ```
 project_name [Hello_world]: ----
 app_name [hello_world_app]: ----
+
+cd project_name
+
 ```
 
 ### Install all the requirements
