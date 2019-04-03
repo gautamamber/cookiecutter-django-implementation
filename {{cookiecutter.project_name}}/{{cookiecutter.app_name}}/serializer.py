@@ -1,9 +1,9 @@
 from .models import Post
-from rest_framework import serialzers
+from rest_framework import serializers
 
 
 
-class PostSerializer(serialzers.ModelSerialzer):
+class PostSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Post
 		fields = "__all__"

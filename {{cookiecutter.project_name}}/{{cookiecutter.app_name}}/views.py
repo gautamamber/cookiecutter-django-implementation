@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from .models import Post
+from .serializer import PostSerializer
+from rest_framework import viewsets
 from rest_framework.mixins import (
     ListModelMixin,
     RetrieveModelMixin,
@@ -21,5 +23,5 @@ class PostViewSet(ListModelMixin,
                     DestroyModelMixin,
                     viewsets.GenericViewSet):
    
-    queryset = models.School.objects.all()
-    serializer_class = serializers.SchoolDetailSerializer
+    queryset = Post.objects.all()
+    serializer_class = PostSerializer

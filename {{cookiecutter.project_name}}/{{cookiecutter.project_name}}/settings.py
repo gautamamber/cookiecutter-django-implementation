@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     '{{cookiecutter.app_name}}',
     'rest_framework',
+    'rest_framework_swagger',
 ]
 
 MIDDLEWARE = [
